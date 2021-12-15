@@ -1,6 +1,6 @@
 module.exports = {
   extends: ['airbnb-base'],
   rules: {
-    semi: [2, 'always'],
+    semi: [2, 'never'],
   },
 };
