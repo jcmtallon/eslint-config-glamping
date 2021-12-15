@@ -1,0 +1,24 @@
+{
+  "name": "eslint-config-glamping",
+  "description": "Shared eslint configuration",
+  "private": true,
+  "repository": "https://github.com/jcmtallon/eslint-config-glamping",
+  "author": "jcmtallon",
+  "license": "ISC",
+  "workspaces": [
+    "packages/*"
+  ],
+  "bugs": {
+    "url": "https://github.com/jcmtallon/eslint-config-glamping/issues"
+  },
+  "devDependencies": {
+    "eslint": "^8.4.0",
+    "eslint-plugin-import": "^2.25.3",
+    "lerna": "^4.0.0"
+  },
+  "engines": {
+    "node": ">= 10.0.0",
+    "npm": "please-use-yarn",
+    "yarn": ">= 1.22.5"
+  }
+}
