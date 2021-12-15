@@ -8,5 +8,9 @@
   "repository": "https://github.com/jcmtallon/eslint-config-glamping",
   "dependencies": {
     "eslint-config-airbnb-base": "^15.0.0"
-  }
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "gitHead": "f3e04f65c08594149efbd54513db8148acdacef0"
 }
