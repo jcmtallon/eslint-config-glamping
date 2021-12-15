@@ -1,0 +1,13 @@
+{
+    "name": "eslint-config-glamping-base",
+    "version": "0.0.1",
+    "description": "Base JS ESLint config",
+    "main": "index.js",
+    "author": "jcmtallon",
+    "license": "ISC",
+    "repository": "https://github.com/jcmtallon/eslint-config-glamping",
+    "dependencies": {
+      "eslint-config-airbnb-base": "^15.0.0"
+    }
+  }
+  
