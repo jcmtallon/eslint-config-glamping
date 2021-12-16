@@ -5,8 +5,8 @@ Shared eslint configuration (sandbox)
 
 ## TODO
 
-- [ ] Base package
-- [ ] Base-typescript package
+- [x] Base package
+- [x] Base-typescript package
 - [ ] React package
 - [ ] React-typescript package
 - [ ] Customized rules
