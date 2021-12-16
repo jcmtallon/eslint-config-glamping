@@ -1,5 +1,5 @@
 {
-  "name": "eslint-config-glamping",
+  "name": "@jcmtallon/eslint-config-glamping",
   "description": "Shared eslint configuration",
   "private": true,
   "repository": "https://github.com/jcmtallon/eslint-config-glamping",
