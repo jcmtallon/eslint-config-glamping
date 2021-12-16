@@ -1,13 +1,13 @@
 {
   "name": "@jcmtallon/eslint-config-glamping-ts",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Base TS ESLint config",
   "main": "index.js",
   "author": "jcmtallon",
   "license": "ISC",
   "repository": "https://github.com/jcmtallon/eslint-config-glamping",
   "dependencies": {
-    "@jcmtallon/eslint-config-glamping-base": "^0.0.3",
+    "@jcmtallon/eslint-config-glamping-base": "^0.0.4",
     "@typescript-eslint/eslint-plugin": "^5.7.0",
     "@typescript-eslint/parser": "^5.7.0"
   },
