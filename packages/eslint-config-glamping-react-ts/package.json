@@ -1,6 +1,6 @@
 {
   "name": "@jcmtallon/eslint-config-glamping-react-ts",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "TS ESLint config for React",
   "main": "index.js",
   "author": "jcmtallon",
@@ -10,7 +10,7 @@
     "registry": "https://npm.pkg.github.com"
   },
   "dependencies": {
-    "@jcmtallon/eslint-config-glamping-react": "^0.0.6"
+    "@jcmtallon/eslint-config-glamping-react": "^0.0.7"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.7.0",
