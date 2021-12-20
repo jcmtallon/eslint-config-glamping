@@ -1,0 +1,27 @@
+{
+    "name": "@jcmtallon/eslint-config-glamping-react",
+    "version": "0.0.5",
+    "description": "Share Eslint config for React",
+    "main": "index.js",
+    "author": "jcmtallon",
+    "license": "ISC",
+    "repository": "https://github.com/jcmtallon/eslint-config-glamping",
+    "publishConfig": {
+        "registry": "https://npm.pkg.github.com"
+    },
+    "dependencies": {
+        "@jcmtallon/eslint-config-glamping-base": "^0.0.5",
+        "object.assign": "^4.1.2",
+        "object.entries": "^1.1.5"
+    },
+    "devDependencies": {
+        "eslint-plugin-jsx-a11y": "^6.5.1",
+        "eslint-plugin-react": "^7.27.1",
+        "eslint-plugin-react-hooks": "^4.3.0"
+    },
+    "peerDependencies": {
+        "eslint-plugin-jsx-a11y": "^6.5.1",
+        "eslint-plugin-react": "^7.27.1",
+        "eslint-plugin-react-hooks": "^4.3.0"
+    }
+}
