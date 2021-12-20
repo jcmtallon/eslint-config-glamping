@@ -1,10 +1,5 @@
 
-const { rules: baseBestPracticesRules } = require('@jcmtallon/eslint-config-glamping-base/rules/airbnb-rules');
-const { rules: baseErrorsRules } = require('@jcmtallon/eslint-config-glamping-base/rules/airbnb-rules');
-const { rules: baseES6Rules } = require('@jcmtallon/eslint-config-glamping-base/rules/airbnb-rules');
-const { rules: baseImportsRules } = require('@jcmtallon/eslint-config-glamping-base/rules/airbnb-rules');
-const { rules: baseStyleRules } = require('@jcmtallon/eslint-config-glamping-base/rules/airbnb-rules');
-const { rules: baseVariablesRules } = require('@jcmtallon/eslint-config-glamping-base/rules/airbnb-rules');
+const { baseBestPracticesRules, baseErrorsRules, baseES6Rules, baseImportsRules, baseStyleRules, baseVariablesRules } = require('@jcmtallon/eslint-config-glamping-base/rules/airbnb');
 
 module.exports = {
     plugins: ['@typescript-eslint'],
