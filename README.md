@@ -5,12 +5,5 @@ Shared eslint configuration (sandbox)
 
 ## TODO
 
-- [x] Base package
-- [x] Base-typescript package
-- [ ] React package
-- [ ] React-typescript package
-- [ ] Customized rules
-- [ ] Publish package
-- [ ] Testing?
-- [ ] README
-- [ ] COLLABORATING
+ - [ ] Add peer dependencies per repository??
+ - [ ] En react-ts, no reconoce typescript. 
