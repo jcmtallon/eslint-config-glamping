@@ -1,9 +1,9 @@
-const { rules: baseBestPracticesRules } = require('@jcmtallon/eslint-config-glamping-base/rules/best-practices');
-const { rules: baseErrorsRules } = require('@jcmtallon/eslint-config-glamping-base/rules/errors');
-const { rules: baseES6Rules } = require('@jcmtallon/eslint-config-glamping-base/rules/es6');
-const { rules: baseImportsRules } = require('@jcmtallon/eslint-config-glamping-base/rules/imports');
-const { rules: baseStyleRules } = require('@jcmtallon/eslint-config-glamping-base/rules/style');
-const { rules: baseVariablesRules } = require('@jcmtallon/eslint-config-glamping-base/rules/variables');
+const { rules: baseBestPracticesRules } = require('@jcmtallon/eslint-config-glamping-base/rules/best-practices')
+const { rules: baseErrorsRules } = require('@jcmtallon/eslint-config-glamping-base/rules/errors')
+const { rules: baseES6Rules } = require('@jcmtallon/eslint-config-glamping-base/rules/es6')
+const { rules: baseImportsRules } = require('@jcmtallon/eslint-config-glamping-base/rules/imports')
+const { rules: baseStyleRules } = require('@jcmtallon/eslint-config-glamping-base/rules/style')
+const { rules: baseVariablesRules } = require('@jcmtallon/eslint-config-glamping-base/rules/variables')
 
 module.exports = {
   plugins: ['@typescript-eslint'],
@@ -57,15 +57,7 @@ module.exports = {
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/comma-dangle.md
     // The TypeScript version also adds 3 new options, all of which should be set to the same value as the base config
     'comma-dangle': 'off',
-    '@typescript-eslint/comma-dangle': [
-      baseStyleRules['comma-dangle'][0],
-      {
-        ...baseStyleRules['comma-dangle'][1],
-        enums: baseStyleRules['comma-dangle'][1].arrays,
-        generics: baseStyleRules['comma-dangle'][1].arrays,
-        tuples: baseStyleRules['comma-dangle'][1].arrays,
-      },
-    ],
+    '@typescript-eslint/comma-dangle': baseStyleRules['comma-dangle'], // CHANGED from error and always-multiline for all options
 
     // Replace Airbnb 'comma-spacing' rule with '@typescript-eslint' version
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/comma-spacing.md
@@ -141,7 +133,7 @@ module.exports = {
     // Replace Airbnb 'no-redeclare' rule with '@typescript-eslint' version
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-redeclare.md
     'no-redeclare': 'off',
-    '@typescript-eslint/no-redeclare': baseBestPracticesRules['no-redeclare'],
+    '@typescript-eslint/no-redeclare': 'off', // CHANGED from extend base config
 
     // Replace Airbnb 'no-shadow' rule with '@typescript-eslint' version
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-shadow.md
@@ -222,22 +214,7 @@ module.exports = {
 
     // Append 'ts' and 'tsx' extensions to Airbnb 'import/no-extraneous-dependencies' rule
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-extraneous-dependencies.md
-    'import/no-extraneous-dependencies': [
-      baseImportsRules['import/no-extraneous-dependencies'][0],
-      {
-        ...baseImportsRules['import/no-extraneous-dependencies'][1],
-        devDependencies: baseImportsRules[
-          'import/no-extraneous-dependencies'
-        ][1].devDependencies.reduce((result, devDep) => {
-          const toAppend = [devDep];
-          const devDepWithTs = devDep.replace(/\bjs(x?)\b/g, 'ts$1');
-          if (devDepWithTs !== devDep) {
-            toAppend.push(devDepWithTs);
-          }
-          return [...result, ...toAppend];
-        }, []),
-      },
-    ],
+    'import/no-extraneous-dependencies': 'off' // Changed from error,
   },
   overrides: [
     {
@@ -265,4 +242,4 @@ module.exports = {
       },
     },
   ],
-};
+}

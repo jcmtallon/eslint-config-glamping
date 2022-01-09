@@ -292,7 +292,7 @@ module.exports = {
 
     // disallow use of assignment in return statement
     // https://eslint.org/docs/rules/no-return-assign
-    'no-return-assign': ['error', 'always'],
+    'no-return-assign': 'off', // CHANGED from error, always
 
     // disallow redundant `return await`
     // https://eslint.org/docs/rules/no-return-await
@@ -410,4 +410,4 @@ module.exports = {
     // https://eslint.org/docs/rules/yoda
     yoda: 'error'
   }
-};
+}

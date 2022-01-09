@@ -12,7 +12,7 @@
     "url": "https://github.com/jcmtallon/eslint-config-glamping/issues"
   },
   "scripts": {
-    "lint": "eslint packages/ --ext js",
+    "lint": "eslint packages/ --ext js --cache --cache-strategy content",
     "lint:fix": "npm run lint -- --fix"
   },
   "devDependencies": {

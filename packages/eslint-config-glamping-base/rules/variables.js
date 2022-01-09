@@ -1,4 +1,4 @@
-const confusingBrowserGlobals = require('confusing-browser-globals');
+const confusingBrowserGlobals = require('confusing-browser-globals')
 
 module.exports = {
   rules: {
@@ -31,10 +31,10 @@ module.exports = {
     ].concat(confusingBrowserGlobals),
 
     // disallow declaration of variables already declared in the outer scope
-    'no-shadow': 'error',
+    'no-shadow': 'off', // CHANGED from error
 
     // disallow shadowing of names such as arguments
-    'no-shadow-restricted-names': 'error',
+    'no-shadow-restricted-names': 'off', // CHANGED from error
 
     // disallow use of undeclared variables unless mentioned in a /*global */ block
     'no-undef': 'error',
@@ -53,4 +53,4 @@ module.exports = {
     // disallow use of variables before they are defined
     'no-use-before-define': ['error', { functions: true, classes: true, variables: true }],
   }
-};
+}
