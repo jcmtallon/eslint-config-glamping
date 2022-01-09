@@ -11,6 +11,10 @@
   "bugs": {
     "url": "https://github.com/jcmtallon/eslint-config-glamping/issues"
   },
+  "scripts": {
+    "lint": "eslint packages/ --ext js",
+    "lint:fix": "npm run lint -- --fix"
+  },
   "devDependencies": {
     "eslint": "^8.4.0",
     "eslint-plugin-import": "^2.25.3",

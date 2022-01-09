@@ -20,6 +20,7 @@ Shared eslint configuration (sandbox)
 
 - [ ] Sort import
 - [ ] Prettier
+- [ ] CI
 
 Do we need?: 
 - [ ] 'eslint:recommended',
