@@ -9,10 +9,9 @@ Shared eslint configuration (sandbox)
 - [x] Replace dependencies with code: Airbnb-base-typescript
 - [ ] Replace dependencies with code: Airbnb-typescript
 
-
-- [ ] Set global .eslintrc
-- [ ] Review dev dependencies for each package
-- [ ] Review peer dependendies for each package (YES, because they are not showing right now.)
+- [x] Set global .eslintrc
+- [x] Review dev dependencies for each package
+- [x] Review peer dependencies for each package.
 
 
 - [ ] En react-ts, no reconoce typescript. ??
