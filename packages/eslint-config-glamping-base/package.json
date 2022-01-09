@@ -1,6 +1,6 @@
 {
   "name": "@jcmtallon/eslint-config-glamping-base",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "description": "Base JS ESLint config",
   "main": "index.js",
   "author": "jcmtallon",
