@@ -4,18 +4,21 @@ Shared eslint configuration (sandbox)
 [WIP]
 
 ## TODO
-- [ ] Replace dependencies with code: Airbnb-base
-- [ ] Replace dependencies with code: Airbnb
-- [ ] Replace dependencies with code: Airbnb-eslint
+- [x] Replace dependencies with code: Airbnb-base
+- [x] Replace dependencies with code: Airbnb
+- [x] Replace dependencies with code: Airbnb-base-typescript
 - [ ] Replace dependencies with code: Airbnb-typescript
 
 
 - [ ] Set global .eslintrc
+- [ ] Review dev dependencies for each package
+- [ ] Review peer dependendies for each package (YES, because they are not showing right now.)
 
-- [ ] Add peer dependencies per repository?? YES, because they are not showing right now.
+
 - [ ] En react-ts, no reconoce typescript. ??
-- [ ] Sort import
 - [ ] Eslint cannot fix maxlen issues. 
+
+- [ ] Sort import
 - [ ] Prettier
 
 Do we need?: 
