@@ -1,7 +1,7 @@
-const assign = require('object.assign');
-const baseStyleRules = require('@jcmtallon/eslint-config-glamping-base/rules/style').rules;
+const assign = require('object.assign')
+const baseStyleRules = require('@jcmtallon/eslint-config-glamping-base/rules/style').rules
 
-const dangleRules = baseStyleRules['no-underscore-dangle'];
+const dangleRules = baseStyleRules['no-underscore-dangle']
 
 module.exports = {
   plugins: [
@@ -437,7 +437,7 @@ module.exports = {
 
     // Enforce consistent usage of destructuring assignment of props, state, and context
     // https://github.com/yannickcr/eslint-plugin-react/blob/843d71a432baf0f01f598d7cf1eea75ad6896e4b/docs/rules/destructuring-assignment.md
-    'react/destructuring-assignment': ['error', 'always'],
+    'react/destructuring-assignment': 'off', // CHANGED from error always
 
     // Prevent using this.state within a this.setState
     // https://github.com/yannickcr/eslint-plugin-react/blob/843d71a432baf0f01f598d7cf1eea75ad6896e4b/docs/rules/no-access-state-in-setstate.md
@@ -579,4 +579,4 @@ module.exports = {
       'Object.freeze', // https://tc39.github.io/ecma262/#sec-object.freeze
     ],
   }
-};
+}
