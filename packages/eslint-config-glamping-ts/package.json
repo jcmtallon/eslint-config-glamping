@@ -1,6 +1,6 @@
 {
   "name": "@jcmtallon/eslint-config-glamping-ts",
-  "version": "0.0.15",
+  "version": "0.0.16",
   "description": "Base TS ESLint config",
   "main": "index.js",
   "author": "jcmtallon",
@@ -10,7 +10,7 @@
     "registry": "https://npm.pkg.github.com"
   },
   "dependencies": {
-    "@jcmtallon/eslint-config-glamping-base": "^0.0.15"
+    "@jcmtallon/eslint-config-glamping-base": "^0.0.16"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.7.0",
