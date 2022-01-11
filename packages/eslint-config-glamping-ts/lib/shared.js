@@ -16,7 +16,7 @@ module.exports = {
     // Append 'ts' extensions to Airbnb 'import/resolver' setting
     'import/resolver': {
       node: {
-        extensions: ['.mjs', '.js', '.json', '.ts', '.d.ts'],
+        extensions: ['.mjs', '.js', '.json', '.ts', '.tsx', '.d.ts'],
       },
     },
     // Append 'ts' extensions to Airbnb 'import/extensions' setting
@@ -77,7 +77,14 @@ module.exports = {
     // Replace Airbnb 'indent' rule with '@typescript-eslint' version
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/indent.md
     indent: 'off',
-    '@typescript-eslint/indent': baseStyleRules.indent,
+    '@typescript-eslint/indent': [
+      baseStyleRules.indent[0],
+      baseStyleRules.indent[1],
+      {
+        ...baseStyleRules.indent[2],
+        offsetTernaryExpressions: false
+      }
+    ],
 
     // Replace Airbnb 'keyword-spacing' rule with '@typescript-eslint' version
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/keyword-spacing.md
