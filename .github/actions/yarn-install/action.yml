@@ -1,0 +1,20 @@
+name: 'Yarn install'
+
+runs:
+  using: 'composite'
+  steps:
+    - name: Restore yarn install cache
+      uses: c-hive/gha-yarn-cache@v1
+
+    - name: Prepare node_modules cache
+      id: cache-node-modules
+      uses: actions/cache@v2
+      with:
+        path: |
+          ./node_modules
+          ./packages/*/node_modules
+        key: node_modules-${{ hashFiles('**/yarn.lock') }}
+
+    - name: Yarn install
+      shell: bash
+      run: yarn install --frozen-lockfile --ignore-scripts

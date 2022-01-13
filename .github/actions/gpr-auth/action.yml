@@ -1,0 +1,13 @@
+name: Login in Github Package Registry 
+
+inputs:
+  token:
+    type: string
+    required: true
+
+runs:
+  using: composite
+  steps:
+    - shell: bash
+      run: |
+        echo '//npm.pkg.github.com/:_authToken=${{ inputs.token }}' >> ~/.npmrc
