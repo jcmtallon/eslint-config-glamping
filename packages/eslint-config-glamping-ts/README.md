@@ -31,7 +31,7 @@ npx install-peerdeps --dev @jcmtallon/eslint-config-glamping-ts
 Extend `@jcmtallon/eslint-config-glamping-ts` in the ESLint config file of your project.
 
 ```js
-// .eslintrc.js
+// .eslintrc.*
 
 module.exports = {
   extends: ['@jcmtallon/eslint-config-glamping-ts']
@@ -45,7 +45,7 @@ This config requires knowledge of your TypeScript config. In your ESLint config,
 For example:
 
 ```js
-// .eslintrc.js
+// .eslintrc.*
 
 module.exports = {
   extends: ['@jcmtallon/eslint-config-glamping-ts'],

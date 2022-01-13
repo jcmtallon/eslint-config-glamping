@@ -32,7 +32,7 @@ npx install-peerdeps --dev @jcmtallon/eslint-config-react
 Extend `@jcmtallon/eslint-config-react` in the ESLint config file of your project.
 
 ```js
-// .eslintrc.js
+// .eslintrc.*
 
 module.exports = {
   extends: ['@jcmtallon/eslint-config-react']
@@ -42,7 +42,7 @@ module.exports = {
 Note that it does not enable any React Hooks rules. To enable those rules, extend `@jcmtallon/eslint-config-react/hooks` as well.
 
 ```js
-// .eslintrc.js
+// .eslintrc.*
 
 module.exports = {
   extends: ['@jcmtallon/eslint-config-react', '@jcmtallon/eslint-config-react/hooks']

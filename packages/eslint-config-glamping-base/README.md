@@ -30,7 +30,7 @@ Extend `@jcmtallon/eslint-config-glamping-base` in the ESLint config file of you
 
 
 ```js
-// .eslintrc.js
+// .eslintrc.*
 
 module.exports = {
   extends: ['@jcmtallon/eslint-config-glamping-base']

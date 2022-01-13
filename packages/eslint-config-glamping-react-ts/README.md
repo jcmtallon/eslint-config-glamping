@@ -34,7 +34,7 @@ npx install-peerdeps --dev @syltek/eslint-config-glamping-react-ts
 Extend `@syltek/eslint-config-glamping-react-ts` in the ESLint config file of your project.
 
 ```js
-// .eslintrc.js
+// .eslintrc.*
 
 module.exports = {
   extends: ['@syltek/eslint-config-glamping-react-ts']
@@ -44,7 +44,7 @@ module.exports = {
 Note that it does not enable any React Hooks rules. To enable those rules, extend `@syltek/eslint-config-glamping-react-ts/hooks` as well.
 
 ```js
-// .eslintrc.js
+// .eslintrc.*
 
 module.exports = {
   extends: ['@syltek/eslint-config-glamping-react-ts', '@syltek/eslint-config-glamping-react-ts/hooks']
@@ -58,7 +58,7 @@ This config requires knowledge of your TypeScript config. In your ESLint config,
 For example:
 
 ```js
-// .eslintrc.js
+// .eslintrc.*
 
 module.exports = {
   extends: ['@syltek/eslint-config-glamping-react-ts'],
