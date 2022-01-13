@@ -1,4 +1,4 @@
-# @syltek/eslint-config-glamping-react-ts
+# @jcmtallon/eslint-config-glamping-react-ts
 This package provides Playtomic's base JS .eslintrc with Typescript support and React plugins as an extensible shared config.
 
 ## Setup
@@ -6,7 +6,7 @@ This package provides Playtomic's base JS .eslintrc with Typescript support and 
 ### 1) Install package
 
 ```bash
-npm install @syltek/eslint-config-glamping-react-ts --save-dev
+npm install @jcmtallon/eslint-config-glamping-react-ts --save-dev
 ```
 
 ### 2) Install peer dependencies
@@ -25,29 +25,29 @@ npm install eslint@^8.4.1 \
 if using npm 5+, you can use this shortcut:
 
 ```bash
-npx install-peerdeps --dev @syltek/eslint-config-glamping-react-ts
+npx install-peerdeps --dev @jcmtallon/eslint-config-glamping-react-ts
 ```
 > If using yarn, you can also use the shortcut described above if you have npm 5+ installed on your machine, as the command will detect that you are using yarn and will act accordingly. 
 
 ### 3) Configure ESLint
 
-Extend `@syltek/eslint-config-glamping-react-ts` in the ESLint config file of your project.
+Extend `@jcmtallon/eslint-config-glamping-react-ts` in the ESLint config file of your project.
 
 ```js
 // .eslintrc.*
 
 module.exports = {
-  extends: ['@syltek/eslint-config-glamping-react-ts']
+  extends: ['@jcmtallon/eslint-config-glamping-react-ts']
 }
 ```
 
-Note that it does not enable any React Hooks rules. To enable those rules, extend `@syltek/eslint-config-glamping-react-ts/hooks` as well.
+Note that it does not enable any React Hooks rules. To enable those rules, extend `@jcmtallon/eslint-config-glamping-react-ts/hooks` as well.
 
 ```js
 // .eslintrc.*
 
 module.exports = {
-  extends: ['@syltek/eslint-config-glamping-react-ts', '@syltek/eslint-config-glamping-react-ts/hooks']
+  extends: ['@jcmtallon/eslint-config-glamping-react-ts', '@jcmtallon/eslint-config-glamping-react-ts/hooks']
 }
 ```
 
@@ -61,7 +61,7 @@ For example:
 // .eslintrc.*
 
 module.exports = {
-  extends: ['@syltek/eslint-config-glamping-react-ts'],
+  extends: ['@jcmtallon/eslint-config-glamping-react-ts'],
   parserOptions: {
     project: ["./tsconfig.json"]
   }
