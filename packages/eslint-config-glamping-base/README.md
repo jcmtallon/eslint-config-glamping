@@ -13,9 +13,7 @@ npm install @jcmtallon/eslint-config-glamping-base --save-dev
 ### 2) Install peer dependencies
 
 ```bash
-npm install eslint@^8.4.1 \
-            eslint-plugin-import@^2.25.3 \
-            --save-dev
+npm install eslint@^8.4.1 --save-dev
 ```
 
 if using npm 5+, you can use this shortcut:

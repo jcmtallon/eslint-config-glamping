@@ -13,12 +13,7 @@ npm install @jcmtallon/eslint-config-glamping-react-ts --save-dev
 
 ```bash
 npm install eslint@^8.4.1 \
-            @typescript-eslint/eslint-plugin@^5.7.0 \
-            @typescript-eslint/parser@^5.7.0 \
-            eslint-plugin-import@^2.25.3 \
-            eslint-plugin-jsx-a11y@^6.5.1, \
-            eslint-plugin-react@^7.27.1, \
-            eslint-plugin-react-hooks@^4.3.0 \
+            typescript@^4.5.4 \
             --save-dev
 ```
 
@@ -78,7 +73,7 @@ npx eslint . --ext .js,.jsx
 Setup your own scripts in `package.json`
 ```json
     scripts:{
-        "lint": "eslint src/ --ext .js  --cache --cache-strategy content",
+        "lint": "eslint src/ --ext .js,.jsx,.ts,tsx  --cache --cache-strategy content",
         "lint:fix": "eslint src/ --fix --ext .js,.jsx,.ts,tsx  --cache --cache-strategy content",
     }
 ```

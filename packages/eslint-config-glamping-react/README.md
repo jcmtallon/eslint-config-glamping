@@ -12,12 +12,7 @@ npm install @jcmtallon/eslint-config-react --save-dev
 ### 2) Install peer dependencies
 
 ```bash
-npm install eslint@^8.4.1 \
-            eslint-plugin-import@^2.25.3 \
-            eslint-plugin-jsx-a11y@^6.5.1, \
-            eslint-plugin-react@^7.27.1, \
-            eslint-plugin-react-hooks@^4.3.0 \
-            --save-dev
+npm install eslint@^8.4.1 --save-dev
 ```
 
 if using npm 5+, you can use this shortcut:

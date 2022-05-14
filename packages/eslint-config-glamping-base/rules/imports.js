@@ -120,7 +120,7 @@ module.exports = {
     // ensure absolute imports are above relative imports and that unassigned imports are ignored
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/order.md
     // TODO: enforce a stricter convention in module import order?
-    'import/order': ['error', {
+    'import/order': ['warn', {
       groups: [
         'builtin',
         'external',
@@ -133,7 +133,7 @@ module.exports = {
         // together with other imports from the same depth level.
       ],
       alphabetize: { order: 'asc' },
-      'newlines-between': 'always',
+      'newlines-between': 'never',
       pathGroups: [
         {
           pattern: '@jcmtallon/**',

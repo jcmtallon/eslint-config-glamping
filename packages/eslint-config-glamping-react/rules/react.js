@@ -1,4 +1,3 @@
-const assign = require('object.assign')
 const baseStyleRules = require('@jcmtallon/eslint-config-glamping-base/rules/style').rules
 
 const dangleRules = baseStyleRules['no-underscore-dangle']
@@ -17,9 +16,7 @@ module.exports = {
   // View link below for react rules documentation
   // https://github.com/yannickcr/eslint-plugin-react#list-of-supported-rules
   rules: {
-    'no-underscore-dangle': [dangleRules[0], assign({}, dangleRules[1], {
-      allow: dangleRules[1].allow.concat(['__REDUX_DEVTOOLS_EXTENSION_COMPOSE__']),
-    })],
+    'no-underscore-dangle': [dangleRules[0], { ...dangleRules[1], allow: dangleRules[1].allow.concat(['__REDUX_DEVTOOLS_EXTENSION_COMPOSE__']), }],
 
     // Specify whether double or single quotes should be used in JSX attributes
     // https://eslint.org/docs/rules/jsx-quotes
@@ -389,9 +386,12 @@ module.exports = {
 
     // Enforce a defaultProps definition for every prop that is not a required prop
     // https://github.com/yannickcr/eslint-plugin-react/blob/843d71a432baf0f01f598d7cf1eea75ad6896e4b/docs/rules/require-default-props.md
-    'react/require-default-props': ['error', {
-      forbidDefaultForRequired: true,
-    }],
+    // ORIGINAL SETTING: ['error', {
+    //   forbidDefaultForRequired: true,
+    // }],
+    // CHANGE REASON: This eslint rule has no sense for React + TS combinations. It forces you to use js defaultProps objects or
+    // to export your props interface in your components.
+    'react/require-default-props': 'off',
 
     // Forbids using non-exported propTypes
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/forbid-foreign-prop-types.md
@@ -493,12 +493,15 @@ module.exports = {
 
     // Disallow JSX props spreading
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-props-no-spreading.md
-    'react/jsx-props-no-spreading': ['error', {
-      html: 'enforce',
-      custom: 'enforce',
-      explicitSpread: 'ignore',
-      exceptions: [],
-    }],
+    // ORIGINAL SETTING: ['error', {
+    //   html: 'enforce',
+    //   custom: 'enforce',
+    //   explicitSpread: 'ignore',
+    //   exceptions: [],
+    // }],
+    // CHANGE REASON: We do commonly use spreading to pass props to our components, in spite of the risk, as it considerably
+    // reduces the amount of boilerplate code in many occasions.
+    'react/jsx-props-no-spreading': 'off',
 
     // Enforce that props are read-only
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prefer-read-only-props.md
@@ -525,9 +528,13 @@ module.exports = {
     // Enforce a specific function type for function components
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/function-component-definition.md
     // TODO: investigate if setting namedComponents to expression vs declaration is problematic
+    // ORIGINAL SETTING: ['error', {
+    //   namedComponents: 'function-expression',
+    //   unnamedComponents: 'function-expression',
+    // }],
     'react/function-component-definition': ['error', {
-      namedComponents: 'function-expression',
-      unnamedComponents: 'function-expression',
+      namedComponents: 'function-declaration',
+      unnamedComponents: 'arrow-function',
     }],
 
     // Enforce a new line after jsx elements and expressions

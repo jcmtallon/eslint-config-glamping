@@ -13,9 +13,7 @@ npm install @jcmtallon/eslint-config-glamping-ts --save-dev
 
 ```bash
 npm install eslint@^8.4.1 \
-            eslint-plugin-import@^2.25.3 \
-            @typescript-eslint/eslint-plugin@^5.7.0 \
-            @typescript-eslint/parser@^5.7.0 \
+            typescript@^4.5.4 \
             --save-dev
 ```
 
